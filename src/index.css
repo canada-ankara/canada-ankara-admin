@@ -1,0 +1,1137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+
+/* Genel Stiller */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Stilleri */
+.navbar {
+  background-color: #1a2526 !important;
+  padding: 10px 0;
+}
+
+/* index.css */
+.dropdown-item.text-center {
+  text-align: center !important;
+}
+
+.navbar-nav.flex-column .nav-item {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.navbar-brand,
+.nav-link {
+  color: #ffffff !important;
+}
+
+.nav-link:hover {
+  color: #e94e1b !important;
+}
+
+.nav-link.active {
+  color: #e94e1b !important;
+  pointer-events: none;
+  cursor: default;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* Tablo ve Seçim Stilleri */
+.selected-row {
+  background-color: #6b7280 !important;
+  border: 2px solid #f97316 !important;
+}
+
+.table-dark .participant-row.selected-row {
+  background-color: #6b7280 !important;
+  border: 2px solid #f97316 !important;
+}
+
+.guest-checkbox {
+  display: none;
+}
+
+.text-orange {
+  color: #f97316;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.table-dark tbody tr {
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.table-dark tbody tr:hover {
+  background-color: #2d3b3e;
+}
+
+/* RSVP Durum Yazısı */
+.rsvp-status {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding-left: 10px;
+}
+
+/* Buton Stilleri */
+.btn-canada {
+  background-color: #e94e1b;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+
+.btn-canada:hover {
+  background-color: #c73e15;
+  color: #ffffff;
+}
+
+.form-check-label{
+  color: #e94e1b;
+}
+
+.btn-canada-secondary {
+  background-color: #ffffff;
+  color: #e94e1b;
+  border: 1px solid #e94e1b;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+
+.btn-canada-secondary:hover {
+  background-color: #e94e1b;
+  color: #ffffff;
+}
+
+.btn-canada-info {
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+
+.btn-canada-info:hover {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+.btn-canada-success {
+  background-color: #10b981;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+
+.btn-canada-success:hover {
+  background-color: #059669;
+  color: #ffffff;
+}
+
+/* Konteyner ve Kart Stilleri */
+.container-custom {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  width: 100%;
+}
+
+.card {
+  background-color: #1a2526;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border: none;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.card-body p {
+  color: #ffffff;
+}
+
+/* Footer Stilleri */
+footer {
+  background-color: #1a2526;
+  min-height: 100px;
+  width: 100%;
+  position: relative;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-text {
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+/* Dropdown Stilleri */
+.dropdown-menu {
+  background-color: #1a2526;
+  border: 1px solid #444444;
+}
+
+.dropdown-item {
+  color: #ffffff;
+}
+
+.dropdown-item:hover,
+.dropdown-item.active {
+  background-color: #e94e1b;
+  color: #ffffff;
+}
+
+/* Tablo Stilleri */
+.table {
+  color: #ffffff;
+  width: 100%;
+}
+
+.table th,
+.table td {
+  border-color: #444444;
+  padding: 12px;
+  vertical-align: middle;
+  font-size: 0.9rem;
+}
+
+.table th {
+  background-color: #1a2526;
+  font-weight: 700;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+/* Hata Tablosu için Özel Stiller */
+.error-table-container {
+  width: 100%; /* Konteyner genişliği modalın genişliğine uyum sağlasın */
+  overflow-x: auto; /* Yatay kaydırma aktif */
+}
+
+.error-table-container .table {
+  width: 100%; /* Tablo genişliği konteynere uyum sağlasın */
+  min-width: 0; /* Sabit min-width kaldırıldı */
+  table-layout: fixed; /* Sütun genişlikleri sabit olacak */
+}
+
+.error-table-header th {
+  background-color: #ffffff !important;
+  color: #f97316 !important;
+  font-weight: bold !important;
+  border-color: #f97316 !important;
+}
+
+.error-table-header th:hover {
+  background-color: #f0f0f0 !important;
+}
+
+/* Hata Tablosu Kolon Genişlikleri */
+.error-table-header th.row-number-column,
+.error-table-container td.row-number-column {
+  min-width: 80px;
+  max-width: 100px;
+  text-align: center;
+}
+
+.error-table-header th.qr-id-column,
+.error-table-container td.qr-id-column {
+  min-width: 150px;
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.error-table-header th.email-column,
+.error-table-container td.email-column {
+  min-width: 300px; /* Daha geniş olması için artırdık */
+  max-width: 350px; /* Daha geniş olması için artırdık */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.error-table-header th.first-name-column,
+.error-table-container td.first-name-column {
+  min-width: 150px;
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.error-table-header th.last-name-column,
+.error-table-container td.last-name-column {
+  min-width: 150px;
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.error-table-header th.guest-type-column,
+.error-table-container td.guest-type-column {
+  min-width: 120px;
+  max-width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.error-table-header th.error-column,
+.error-table-container td.error-column {
+  min-width: 250px;
+  max-width: 350px; /* Genişlik dengesi için azalttık */
+  white-space: normal;
+  overflow-wrap: break-word;
+  vertical-align: top;
+}
+
+/* Modal için Daha Geniş Alan */
+.modal-lg {
+  max-width: 98%; /* Modal genişliği ekranın %98'ini kaplasın */
+  width: 100%; /* Genişlik dinamik olarak ayarlanacak */
+  margin: 0 auto; /* Ortalanmış şekilde */
+}
+
+.modal-lg .modal-dialog {
+  max-width: 100%; /* Modal dialog genişliği tam kapsayacak */
+  width: 98vw; /* Görünür genişliğin %98'i */
+}
+
+/* Form ve Input Stilleri */
+.search-input,
+.filter-select,
+.language-select {
+  max-width: 300px;
+  border-radius: 4px;
+  border: 1px solid #444444;
+  background-color: #2d3b3e;
+  color: #ffffff;
+  margin-bottom: 15px;
+  padding: 8px;
+}
+
+.search-input::placeholder,
+.filter-select,
+.language-select,
+.form-control::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.language-select:focus {
+  border-color: #e94e1b;
+  box-shadow: none;
+  background-color: #2d3b3e;
+  color: #ffffff;
+}
+
+.form-control {
+  background-color: #2d3b3e;
+  color: #ffffff;
+  border: 1px solid #444444;
+  width: 100%; /* Input sütun genişliğine uyum sağlayacak */
+  box-sizing: border-box; /* Padding ve border genişliği hesaba katılsın */
+}
+
+.form-control:focus {
+  background-color: #2d3b3e;
+  color: #ffffff;
+  border-color: #e94e1b;
+  box-shadow: none;
+}
+
+.form-label {
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+/* Modal Stilleri */
+.modal-content {
+  background-color: #1a2526;
+  color: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #f97316;
+}
+
+.modal-header,
+.modal-footer {
+  border-color: #444444;
+}
+
+.modal-title {
+  color: #ffffff;
+}
+
+.btn-close {
+  filter: invert(1);
+}
+
+/* Aksiyon Butonları */
+.action-buttons button {
+  margin-right: 5px;
+  padding: 6px;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-buttons i {
+  font-size: 16px;
+}
+
+/* Filtre Konteyneri */
+.filter-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  gap: 10px; /* Butonlar arası boşluk */
+}
+
+.filter-container .search-input {
+  margin-right: auto;
+}
+
+.filter-container .filter-select {
+  margin-left: 15px;
+  padding: 6px;
+}
+
+/* Sayfalama Stilleri */
+.pagination-container {
+  margin-top: 20px;
+}
+
+.pagination .page-link {
+  background-color: #2d3b3e;
+  color: #ffffff;
+  border: 1px solid #444444;
+  margin: 0 2px;
+  border-radius: 4px;
+}
+
+.pagination .page-link:hover {
+  background-color: #e94e1b;
+  color: #ffffff;
+  border-color: #e94e1b;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #e94e1b;
+  border-color: #e94e1b;
+  color: #ffffff;
+}
+
+.pagination .page-item.disabled .page-link {
+  background-color: #1a2526;
+  color: #666666;
+  border-color: #444444;
+}
+
+/* Navbar Nav Stilleri */
+.navbar-nav .nav-link {
+  padding: 8px 12px;
+  font-size: 0.9rem;
+}
+
+.navbar-nav .btn-canada {
+  margin-top: 0;
+  line-height: 1.5;
+}
+
+/* Davetiye Aksiyonları */
+.invitation-actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+/* Toggle Switch Stilleri */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #444444;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #ffffff;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.toggle-switch input:checked + .slider {
+  background-color: #e94e1b;
+}
+
+.toggle-switch input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Medya Sorguları */
+@media (min-width: 992px) {
+  .navbar-collapse {
+    flex-grow: 0;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100vw;
+    height: 100vh;
+    background-color: #1a2526;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: transform 0.05s ease-in-out;
+    transform: translateX(0);
+  }
+
+  .navbar-collapse.show {
+    transform: translateX(-100%);
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .nav-item {
+    margin-bottom: 15px;
+  }
+
+  .nav-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .nav-link,
+  .btn-canada {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+  }
+
+  .dropdown-menu {
+    background-color: #2d3b3e;
+    border: none;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .dropdown-item {
+    font-size: 1rem;
+    padding: 8px 20px;
+  }
+
+  .back-button {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 8px;
+    font-size: 1rem;
+    z-index: 1001;
+    background-color: #2d3b3e;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+  }
+
+  .back-button:hover {
+    background-color: #e94e1b;
+  }
+
+  .back-button i {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .filter-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .filter-container .search-input {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .filter-container .ms-auto {
+    margin-left: 0;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .btn-canada,
+  .btn-canada-secondary,
+  .btn-canada-info,
+  .btn-canada-success {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .invitation-actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .text-orange {
+    font-size: 0.9rem;
+  }
+
+  .login-title {
+    font-size: 2rem !important;
+  }
+
+  .login-subtitle {
+    font-size: 1rem !important;
+  }
+}
+
+/* Modal Animasyonları */
+.modal.fade .modal-dialog {
+  transition: transform 0.3s ease-out;
+  transform: translateY(-50px);
+}
+
+.modal.show .modal-dialog {
+  transform: translateY(0);
+}
+
+/* Rapor Bölümü Stilleri */
+.report-section {
+  margin-bottom: 30px;
+  padding: 15px;
+  background: #1a2526;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  animation: slideIn 0.5s ease-out;
+}
+
+.report-section h6 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #f97316;
+  margin-bottom: 15px;
+}
+
+/* PDF için Ek Stiller */
+.report-section * {
+  opacity: 1 !important;
+}
+
+.table-3d th,
+.table-3d td {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  background-color: #1a2526 !important;
+}
+
+.report-section h6 {
+  color: #f97316 !important;
+  font-weight: 700 !important;
+}
+
+/* 3D Efektli Tablo */
+.table-3d {
+  background: linear-gradient(145deg, #1a2526, #2d3b3e);
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.6), -6px -6px 20px rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}
+
+.table-3d th,
+.table-3d td {
+  border-color: #444444;
+  padding: 12px;
+  vertical-align: middle;
+  font-size: 0.9rem;
+}
+
+.table-3d th {
+  background: linear-gradient(145deg, #2d3b3e, #1a2526);
+  font-weight: 700;
+}
+
+.table-3d td {
+  background: transparent;
+}
+
+.table-3d tr:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(249, 115, 22, 0.4);
+}
+
+/* Grafik Kapsayıcıları */
+canvas {
+  max-width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.chart-container {
+  background: linear-gradient(145deg, #000000, #2d3b3e); /* Uzay teması için siyah tonlar */
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.8), -10px -10px 20px rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 30px;
+  animation: chartPop 0.5s ease-out;
+}
+
+.chart-container canvas {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+
+
+/* Modal için Geniş Alan */
+.modal-xl .modal-dialog {
+  max-width: 90%;
+  width: 1200px;
+}
+
+/* Login Ekranı Başlıkları */
+.login-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #f97316;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-family: 'Roboto Slab', serif;
+}
+
+.login-subtitle {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #f97316;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-family: 'Roboto Slab', serif;
+}
+
+/* Dil Seçimi Dropdown */
+.language-select-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+/* Sürükle-Bırak Alanı */
+.dropzone {
+  background-color: #2d3b3e;
+  color: #ffffff;
+  transition: background-color 0.3s;
+}
+
+.dropzone.drag-active {
+  background-color: #3e4b4e;
+}
+
+/* Animasyonlar */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes chartPop {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInNav {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutNav {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+/* Etkinlik Ayarları Sayfası */
+.event-settings {
+  padding: 20px;
+  max-width: 100%;
+  margin: 40px auto;
+  background-color: #1a2526;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  animation: slideIn 0.5s ease-out;
+}
+
+.event-settings h2 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 2rem;
+  color: #f97316;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.event-settings .setting-group {
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: #2d3b3e;
+  border-radius: 6px;
+  border-left: 4px solid #e94e1b;
+}
+
+.event-settings .setting-group h4 {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.event-settings .setting-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.event-settings .setting-item label {
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.event-settings .btn-canada {
+  margin-top: 10px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+}
+
+.event-settings .btn-canada:hover {
+  background-color: #c73e15;
+}
+
+.event-settings .info-text {
+  font-size: 0.85rem;
+  color: #d1d5db;
+  margin-top: 5px;
+}
+
+/* react-select Stilleri */
+.react-select-container {
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+.react-select__control {
+  background-color: #1a2526;
+  border: 1px solid #f97316;
+  color: #ffffff;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  min-height: 38px;
+  transition: all 0.3s;
+}
+
+.react-select__control:hover {
+  border-color: #e94e1b;
+}
+
+.react-select__value-container {
+  padding: 2px 8px;
+}
+
+.react-select__single-value {
+  color: #ffffff;
+}
+
+.react-select__placeholder {
+  color: #d1d5db;
+  font-size: 0.9rem;
+}
+
+.react-select__menu {
+  background-color: #1a2526;
+  border: 1px solid #f97316;
+  border-radius: 4px;
+  margin-top: 4px;
+  z-index: 1000;
+}
+
+.react-select__menu-list {
+  padding: 0;
+}
+
+.react-select__option {
+  background-color: #1a2526;
+  color: #ffffff;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.react-select__option:hover,
+.react-select__option--is-focused {
+  background-color: #e94e1b;
+  color: #ffffff;
+}
+
+.react-select__option--is-selected {
+  background-color: #f97316;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.react-select__no-options {
+  color: #d1d5db;
+  font-size: 0.9rem;
+  padding: 8px 12px;
+  text-align: center;
+}
+
+/* Add Guest Modalındaki react-select Stilleri */
+.modal-content .react-select__control {
+  background-color: #282827; /* Dropdown menü arka plan rengi */
+  border: 1px solid #e94e1b;
+  color: #ffffff; /* Yazı rengi */
+}
+
+.modal-content .react-select__input{
+      color: #ffffff; /* Seçeneklerin yazı rengi */
+}
+
+.modal-content .react-select__control:hover {
+  border-color: #e94e1b; /* Hover durumunda kenarlık rengi */
+}
+
+.modal-content .react-select__single-value {
+  color: #ffffff; /* Seçili değerin yazı rengi */
+}
+
+.modal-content .react-select__placeholder {
+  color: #ffffff; /* Placeholder yazı rengi */
+}
+
+.modal-content .react-select__menu {
+  background-color: #282827; /* Dropdown menü arka plan rengi */
+  border: 1px solid #5c5c5b;
+  color: #ffffff; /* Seçeneklerin yazı rengi */
+}
+
+.modal-content .react-select__option {
+  background-color: #282827; /* Seçeneklerin arka plan rengi */
+  color: #ffffff; /* Seçeneklerin yazı rengi */
+}
+
+.modal-content .react-select__option:hover,
+.modal-content .react-select__option--is-focused {
+  background-color: #e94e1b; /* Hover durumunda arka plan rengi */
+  color: #ffffff; /* Hover durumunda yazı rengi */
+}
+
+.modal-content .react-select__option--is-selected {
+  background-color: #c73e15; /* Seçili seçenek için daha koyu bir ton */
+  color: #ffffff;
+}
+
+/* Tablo Kolonları için Özel Stiller */
+.table-dark .qr-id-column,
+.table-dark .plus-one-qr-id-column {
+  width: 150px;
+  max-width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.table-dark .qr-id-column:hover,
+.table-dark .plus-one-qr-id-column:hover {
+  background-color: #3e4b4e;
+  cursor: pointer;
+}
+
+.table-dark th.qr-id-column,
+.table-dark th.plus-one-qr-id-column {
+  font-weight: 700;
+  text-align: center;
+}
+
+.table-dark td.qr-id-column,
+.table-dark td.plus-one-qr-id-column {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #d1d5db;
+}
+
+.table-3d .qr-id-column,
+.table-3d .plus-one-qr-id-column {
+  background: transparent;
+}
+
+.table-3d th.qr-id-column,
+.table-3d th.plus-one-qr-id-column {
+  background: linear-gradient(145deg, #2d3b3e, #1a2526);
+}
+
+.table-3d td.qr-id-column:empty,
+.table-3d td.plus-one-qr-id-column:empty {
+  color: #666666;
+  font-style: italic;
+}
+
+/* Responsive Tablo */
+@media (max-width: 768px) {
+  .table-dark .qr-id-column,
+  .table-dark .plus-one-qr-id-column {
+    width: 100px;
+    max-width: 100px;
+  }
+
+  .table-dark td.qr-id-column,
+  .table-dark td.plus-one-qr-id-column {
+    font-size: 0.8rem;
+  }
+}
+
+/* Responsive Etkinlik Ayarları */
+@media (max-width: 576px) {
+  .event-settings {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .event-settings h2 {
+    font-size: 1.5rem;
+  }
+
+  .event-settings .setting-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .event-settings .toggle-switch {
+    margin-left: auto;
+  }
+
+  .react-select-container {
+    width: 100%;
+    background-color: #1a2526;
+    color: #ffffff;
+  }
+
+  .react-select__control {
+    font-size: 0.85rem;
+  }
+
+  .react-select__option {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+}
